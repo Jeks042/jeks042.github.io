@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const username = 'Jeks042'; // Replaced with my GitHub username
+    const username = 'Jeks042'; // Replace with your GitHub username
     const repoList = document.getElementById('repo-list');
 
     fetch(`https://api.github.com/users/${username}/repos`)
