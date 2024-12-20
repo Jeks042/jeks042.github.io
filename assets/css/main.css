@@ -28,3 +28,71 @@
     --lt-color-overlay-transparent: rgba(0, 0, 0, 0.1) !important;
     --lt-shadow-website-overlay: 0 0 7px 0 rgba(0, 0, 0, 0.3) !important;
 }
+
+screen and (max-width: 1280px) {
+    html {
+        font-size: 11pt;
+    }
+}
+
+screen and (max-width: 1680px) {
+    html {
+        font-size: 12pt;
+    }
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+    padding: 0;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+    border: 0;
+        border-top-width: 0px;
+        border-right-width: 0px;
+        border-bottom-width: 0px;
+        border-left-width: 0px;
+        border-top-style: initial;
+        border-right-style: initial;
+        border-bottom-style: initial;
+        border-left-style: initial;
+        border-top-color: initial;
+        border-right-color: initial;
+        border-bottom-color: initial;
+        border-left-color: initial;
+        border-image-source: initial;
+        border-image-slice: initial;
+        border-image-width: initial;
+        border-image-outset: initial;
+        border-image-repeat: initial;
+    font-size: 100%;
+    font: inherit;
+        font-style: ;
+        font-variant-ligatures: ;
+        font-variant-caps: ;
+        font-variant-numeric: ;
+        font-variant-east-asian: ;
+        font-variant-alternates: ;
+        font-variant-position: ;
+        font-variant-emoji: ;
+        font-weight: ;
+        font-stretch: ;
+        font-size: ;
+        line-height: ;
+        font-family: ;
+        font-optical-sizing: ;
+        font-size-adjust: ;
+        font-kerning: ;
+        font-feature-settings: ;
+        font-variation-settings: ;
+    vertical-align: baseline;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
