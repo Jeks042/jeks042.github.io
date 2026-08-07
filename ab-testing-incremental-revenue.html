@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>A/B Testing & Incremental Revenue | Chukwujekwu Joseph Ezema</title>
+  <meta name="description" content="A 64,000-customer randomised email experiment translated into treatment, revenue, profit and targeting decisions using Python, Power BI and causal policy evaluation.">
+  <meta property="og:title" content="A/B Testing & Incremental Revenue | Analytics Case Study">
+  <meta property="og:description" content="From randomised treatment effects to a commercially defensible campaign and targeting decision.">
+  <meta property="og:type" content="article">
+  <link rel="stylesheet" href="assets/css/portfolio-refresh.css">
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">CHUKWUJEKWU JOSEPH EZEMA</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="myProjects.html">Case Studies</a>
+        <a href="publication.html">Blogs</a>
+        <a href="https://github.com/Jeks042/ab-testing-incremental-revenue">GitHub</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="case-hero">
+    <div class="container case-hero-inner">
+      <div class="eyebrow">Flagship case study · Experimentation & commercial analytics</div>
+      <h1>A/B Testing & Incremental Revenue</h1>
+      <p class="case-lead">A 64,000-customer randomised email experiment used to decide which campaign should be deployed, whether the effect was commercially worthwhile, and whether personalised targeting added enough value to replace the strongest fixed treatment.</p>
+      <div class="skill-list case-skills">
+        <span>Python</span><span>Power BI</span><span>Experimentation</span><span>Statistical inference</span><span>Commercial modelling</span><span>Policy evaluation</span>
+      </div>
+      <div class="actions">
+        <a class="btn" href="#decision">View decision</a>
+        <a class="btn secondary" href="https://github.com/Jeks042/ab-testing-incremental-revenue">Open repository</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section case-overview" id="decision">
+      <div class="container">
+        <div class="decision-box">
+          <div class="eyebrow" style="color:#0b6bcb">Operating recommendation</div>
+          <h2>Use Men's E-Mail when campaign economics clear the documented threshold.</h2>
+          <p>Men's E-Mail generated the strongest causal and commercial result. The personalised targeting policy was not approved for deployment because its held-out profit advantage was too uncertain to justify replacing the fixed treatment.</p>
+        </div>
+        <div class="case-stats">
+          <div class="metric-card"><strong>64,000</strong><span>randomised customers</span></div>
+          <div class="metric-card"><strong>+£0.77</strong><span>incremental spend per eligible customer vs control</span></div>
+          <div class="metric-card"><strong>≈ £208</strong><span>incremental profit per 1,000 at reference economics</span></div>
+          <div class="metric-card"><strong>Do not deploy</strong><span>personalised policy without stronger evidence</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container case-columns">
+        <div class="case-copy">
+          <div class="eyebrow" style="color:#0b6bcb">Business question</div>
+          <h2>Move beyond campaign response to incremental value.</h2>
+          <p>The decision was not simply whether emailed customers purchased more. A useful recommendation had to separate revenue that would have occurred anyway from revenue caused by treatment, connect the causal effect to contribution economics, and determine whether customer-level targeting improved the decision.</p>
+          <p>The analysis therefore used <strong>spend per eligible customer</strong> as the primary commercial outcome, with visit and conversion as supporting behavioural measures.</p>
+        </div>
+        <div class="case-panel">
+          <h3>Decision hierarchy</h3>
+          <ol>
+            <li>Validate that the randomised comparison is credible.</li>
+            <li>Estimate treatment effects against No E-Mail.</li>
+            <li>Compare Men's and Women's treatments directly.</li>
+            <li>Translate incremental spend into contribution profit.</li>
+            <li>Test whether segmentation or personalised targeting improves on the strongest fixed policy.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow" style="color:#0b6bcb">Experiment evidence</div>
+          <h2>Both treatments created value; Men's E-Mail created more.</h2>
+          <p>The experiment passed treatment-allocation, data-quality and baseline-balance checks, supporting an intention-to-treat comparison across all assigned customers.</p>
+        </div>
+        <div class="result-table-wrap">
+          <table class="result-table">
+            <thead><tr><th>Comparison</th><th>Visit lift</th><th>Conversion lift</th><th>Spend lift / customer</th><th>Decision implication</th></tr></thead>
+            <tbody>
+              <tr><td>Men's vs No E-Mail</td><td>+7.66 pp</td><td>+0.68 pp</td><td><strong>+£0.770</strong></td><td>Strongest value-creating treatment</td></tr>
+              <tr><td>Women's vs No E-Mail</td><td>+4.52 pp</td><td>+0.31 pp</td><td><strong>+£0.424</strong></td><td>Value creating, but weaker overall</td></tr>
+              <tr><td>Men's vs Women's</td><td>+3.14 pp</td><td>+0.37 pp</td><td><strong>+£0.345</strong></td><td>Direct evidence supports Men's</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="case-note">The direct Men's-versus-Women's spend difference had a 95% confidence interval of approximately £0.04 to £0.67 and remained significant after multiplicity adjustment.</p>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container case-columns">
+        <div class="case-copy">
+          <div class="eyebrow" style="color:#0b6bcb">Commercial interpretation</div>
+          <h2>Statistical lift was converted into an operating threshold.</h2>
+          <p>At a reference scenario of <strong>40% contribution margin</strong> and <strong>£0.10 contact cost per customer</strong>, Men's E-Mail generated approximately <strong>£208 incremental profit per 1,000 eligible customers</strong>, compared with approximately £70 for Women's E-Mail.</p>
+          <p>Men's E-Mail also had the wider break-even cost buffer, making the recommendation more resilient to changes in contact cost or contribution margin.</p>
+        </div>
+        <div class="case-panel">
+          <h3>Commercial guardrail</h3>
+          <p><strong>Observed campaign revenue was not treated as incremental revenue.</strong></p>
+          <p>Profit was derived from the randomised spend effect and explicit margin/contact-cost assumptions, keeping causal evidence separate from business assumptions.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container case-columns">
+        <div class="case-copy">
+          <div class="eyebrow" style="color:#0b6bcb">Targeting decision</div>
+          <h2>The more complex policy did not earn deployment.</h2>
+          <p>Pre-specified segment interaction tests did not support a manual treatment rule. A personalised policy was then evaluated on a <strong>19,200-customer randomised holdout</strong> against Men's E-Mail to all.</p>
+          <p>The profit-aware policy showed a point uplift of approximately <strong>£18 per 1,000 customers</strong>, but its 95% bootstrap interval ranged from approximately <strong>-£129 to +£155</strong>.</p>
+          <p><strong>Decision: keep personalisation exploratory.</strong> The model could rank customers, but it did not demonstrate sufficiently reliable incremental policy value.</p>
+        </div>
+        <div class="case-panel evidence-panel">
+          <h3>Why the model was rejected</h3>
+          <ul>
+            <li>The strongest fixed treatment was the benchmark.</li>
+            <li>Evaluation used unseen randomised holdout data.</li>
+            <li>The estimated improvement was positive but imprecise.</li>
+            <li>The interval included no improvement and meaningful downside.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow" style="color:#0b6bcb">Power BI executive report</div>
+          <h2>Four pages, each built around a decision.</h2>
+          <p>The dashboard moves from the recommended action to the experimental evidence, commercial sensitivity and final targeting decision.</p>
+        </div>
+        <div class="dashboard-grid">
+          <figure class="dashboard-panel"><img src="https://raw.githubusercontent.com/Jeks042/ab-testing-incremental-revenue/main/dashboard/Executive%20Decision.png" alt="Power BI Executive Decision dashboard"><figcaption>Executive Decision — treatment recommendation, incremental spend, commercial value and targeting status.</figcaption></figure>
+          <figure class="dashboard-panel"><img src="https://raw.githubusercontent.com/Jeks042/ab-testing-incremental-revenue/main/dashboard/Experiment%20Evidence.png" alt="Power BI Experiment Evidence dashboard"><figcaption>Experiment Evidence — arm outcomes, confidence intervals and direct treatment comparison.</figcaption></figure>
+          <figure class="dashboard-panel"><img src="https://raw.githubusercontent.com/Jeks042/ab-testing-incremental-revenue/main/dashboard/Commercial%20Sensitivity.png" alt="Power BI Commercial Sensitivity dashboard"><figcaption>Commercial Sensitivity — contribution margin, contact cost and break-even economics.</figcaption></figure>
+          <figure class="dashboard-panel"><img src="https://raw.githubusercontent.com/Jeks042/ab-testing-incremental-revenue/main/dashboard/Targeting%20Decision.png" alt="Power BI Targeting Decision dashboard"><figcaption>Targeting Decision — policy comparison, uncertainty and non-deployment decision.</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container case-columns">
+        <div class="case-copy">
+          <div class="eyebrow" style="color:#0b6bcb">Analytical controls</div>
+          <h2>Evidence was held to a higher bar than model complexity.</h2>
+          <p>The analysis retained all 64,000 assigned customers, used pre-treatment features for segmentation and targeting, adjusted related comparisons for multiplicity, and required personalised policies to beat the strongest fixed benchmark on held-out randomised data.</p>
+          <p>The final recommendation deliberately separates <strong>prediction</strong>, <strong>causal treatment effect</strong> and <strong>deployable policy value</strong>.</p>
+        </div>
+        <div class="case-panel">
+          <h3>Important limitations</h3>
+          <ul>
+            <li>One retailer, campaign context and outcome window.</li>
+            <li>No unique customer identifier in the source data.</li>
+            <li>Spend is rare, zero-inflated and highly skewed.</li>
+            <li>Commercial conclusions depend on stated margin and cost assumptions.</li>
+            <li>Prospective randomisation is still required before claiming personalised-policy uplift in operation.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section case-cta">
+      <div class="container decision-box">
+        <div class="eyebrow" style="color:#0b6bcb">Project record</div>
+        <h2>Reproducible analysis, decision reports and methodology are available on GitHub.</h2>
+        <p>The repository contains the validation workflow, treatment-effect analysis, segment tests, held-out policy evaluation, decision documentation and Power BI outputs behind this case study.</p>
+        <div class="actions dark-actions">
+          <a class="btn" href="https://github.com/Jeks042/ab-testing-incremental-revenue">View full repository</a>
+          <a class="btn outline-dark" href="myProjects.html">Back to case studies</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div><strong>Chukwujekwu Joseph Ezema</strong><br>Product & Customer Data Analyst</div>
+      <div><a href="mailto:chukwujekwujeks@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/chukwujekwu-joseph-ezema-7b1624129/">LinkedIn</a> · <a href="https://github.com/Jeks042">GitHub</a></div>
+    </div>
+  </footer>
+</body>
+</html>
